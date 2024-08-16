@@ -1,0 +1,113 @@
+/*======== Home =========*/
+.home__container {
+  padding-top: 4rem;
+  row-gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.home__img {
+  width: 350px;
+  justify-self: center;
+}
+
+.home__data {
+  text-align: left;
+}
+
+.home__title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.home__description {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.tyler {
+  color: #ff9900;
+}
+
+/*===== Button =======*/
+.button {
+  display: inline-block;
+  background-color: var(--button-color);
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.button__icon {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+/*====== Breakpoints =====*/
+/* Small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .home__title {
+    font-size: 1.5rem;
+  }
+
+  .home__description {
+    font-size: 0.75rem;
+  }
+
+  .home__button {
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+  }
+
+  .home__img {
+    width: 275px;
+  }
+}
+
+/*medium devices */
+@media screen and (min-width: 576px) {
+  .home__data {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .home__data {
+    text-align: left;
+    margin-left: auto;
+  }
+
+  .home__button {
+    margin-top: 2rem;
+  }
+
+  .button__icon {
+    margin-top: 0.2rem;
+  }
+}
+
+/* large devices */
+@media screen and (min-width: 992px) {
+  .home__img {
+    width: 140%;
+  }
+
+  .home__data {
+    margin-left: 0;
+  }
+}

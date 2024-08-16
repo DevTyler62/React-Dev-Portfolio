@@ -1,0 +1,5 @@
+.nav__link {
+  color: var(--paletter-text);
+  transition: 0.4s;
+  font-weight: 600;
+}

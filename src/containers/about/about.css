@@ -1,0 +1,63 @@
+/*====== About ======*/
+.about {
+  margin-bottom: 2rem;
+}
+
+.about__title {
+  margin-bottom: 2.75rem;
+}
+
+.about__container {
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 4rem;
+}
+
+.about__img {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.about__img-img {
+  width: 400px;
+}
+
+.about__content {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.about__description {
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 1.15rem;
+}
+
+/* large devices */
+@media screen and (min-width: 992px) {
+  .about__container {
+    width: 100%;
+  }
+}
+
+/*medium devices */
+@media screen and (min-width: 576px) {
+  .about__container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* large devices */
+@media screen and (min-width: 992px) {
+  .about__container {
+    width: 100%;
+  }
+}

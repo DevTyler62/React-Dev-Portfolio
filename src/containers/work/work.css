@@ -1,0 +1,30 @@
+/*===== My work =====*/
+.work__container {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0;
+}
+
+.work__subtitle {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .work__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0;
+    margin: 1.5rem;
+  }
+
+  .work__content {
+    justify-self: center;
+    width: 100%;
+  }
+}
+
+/* large devices */
+@media screen and (min-width: 992px) {
+  .work__subtitle {
+    margin-bottom: 2rem;
+  }
+}

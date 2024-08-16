@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/*== Theme colors =====*/
+:root {
+  /*Light*/
+  --light-background: #ffffff;
+  --light-text: #000;
+  --light-orange: hsl(36, 100%, 50%);
+  --light-blue: hsl(201, 83%, 36%);
+  --light-work-back: rgb(251, 250, 252);
+  --light-work-border: rgb(221, 221, 221);
+
+  /*Dark*/
+  --dark-background: rgb(14, 18, 23);
+  --dark-text: #fafafa;
+  --dark-orange: hsl(36, 80%, 50%);
+  --dark-blue: hsl(201, 80%, 36%);
+  --dark-work-back: rgb(28, 32, 38);
+  --dark-work-border: rgb(56, 61, 71);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --paletter-background: var(--light-background);
+    --paletter-text: var(--light-text);
+    --button-color: var(--light-orange);
+    --footer-color: var(--light-orange);
+    --form-color: var(--light-blue);
+    --work-back-color: var(--light-work-back);
+    --work-border-color: var(--light-work-border);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paletter-background: var(--dark-background);
+    --paletter-text: var(--dark-text);
+    --button-color: var(--dark-orange);
+    --footer-color: var(--dark-orange);
+    --form-color: var(--dark-blue);
+    --work-back-color: var(--dark-work-back);
+    --work-border-color: var(--dark-work-border);
+  }
+}
+
+/* If user specifically chose light theme */
+:root[data-theme="light"] {
+  --paletter-background: var(--light-background);
+  --paletter-text: var(--light-text);
+  --button-color: var(--light-orange);
+  --footer-color: var(--light-orange);
+  --form-color: var(--light-blue);
+  --work-back-color: var(--light-work-back);
+  --work-border-color: var(--light-work-border);
+}
+
+/* If user specifically chose dark theme */
+:root[data-theme="dark"] {
+  --paletter-background: var(--dark-background);
+  --paletter-text: var(--dark-text);
+  --button-color: var(--dark-orange);
+  --footer-color: var(--dark-orange);
+  --form-color: var(--dark-blue);
+  --work-back-color: var(--dark-work-back);
+  --work-border-color: var(--dark-work-border);
+}
+
+/*====== Base styles =======*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 3.5rem 0 0 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--paletter-background);
+  color: var(--paletter-text);
+}
+
+header {
+  background-color: var(--paletter-background);
+  color: var(--paletter-text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/*==== Reuse classes ====*/
+.container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.main {
+  overflow: hidden;
+}
+.section {
+  padding: 4.5rem 0 1rem;
+}
+
+.section__title {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+/* large devices */
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
