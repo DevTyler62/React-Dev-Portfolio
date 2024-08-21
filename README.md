@@ -6,4 +6,4 @@ I am using React Router in order to navigate to each of my individual project pa
 
 I am hosting the site using Vercel at the current link: https://tylercodes.vercel.app/
 
-I am in the process of transferring over my custom domain to be used.
+You can also view the site on my custom domain at: https://www.tylercodes.dev/
