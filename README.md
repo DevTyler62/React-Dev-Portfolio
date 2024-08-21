@@ -1,8 +1,9 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my portfolio that I rebuilt using React + Vite.
 
-Currently, two official plugins are available:
+I am using React Router in order to navigate to each of my individual project pages. I also used EmailJS in order to be able to send emails to myself through the form that is on the page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I am hosting the site using Vercel at the current link: https://tylercodes.vercel.app/
+
+I am in the process of transferring over my custom domain to be used.
