@@ -67,7 +67,7 @@ function CheckLiveSite({ projectTitle }) {
   if (projectTitle === "Skywind") {
     return (
       <>
-        <a href="https://skywind.netlify.app/" class="button button__live">
+        <a href="https://skywind.netlify.app/" className="button button__live">
           Live Site
         </a>
       </>
@@ -77,7 +77,7 @@ function CheckLiveSite({ projectTitle }) {
       <>
         <a
           href="https://tictactoe-code.netlify.app/"
-          class="button button__live"
+          className="button button__live"
         >
           Live Site
         </a>
@@ -105,23 +105,23 @@ const ProjectPage = ({
         <h1 className="project__title-title">{projectTitle}</h1>
       </div>
       <div className="container project__image">
-        <img src={projectImg} alt="" class="project__image-img" />
+        <img src={projectImg} alt="" className="project__image-img" />
       </div>
-      <div class="container technology">
-        <h1 class="technology__title">Technologies Used</h1>
-        <ul class="technology__list">
+      <div className="container technology">
+        <h1 className="technology__title">Technologies Used</h1>
+        <ul className="technology__list">
           <CheckProject projectTitle={projectTitle} />
         </ul>
       </div>
-      <div class="container buttons">
-        <a href={projectCode} class="button button__code">
+      <div className="container buttons">
+        <a href={projectCode} className="button button__code">
           Code
         </a>
         <CheckLiveSite projectTitle={projectTitle} />
       </div>
-      <div class="container project__description">
-        <h1 class="description__title">Description</h1>
-        <p class="description">{description}</p>
+      <div className="container project__description">
+        <h1 className="description__title">Description</h1>
+        <p className="description">{description}</p>
       </div>
     </div>
   );
