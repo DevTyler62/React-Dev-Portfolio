@@ -9,7 +9,7 @@ const NavLinks = ({ liClass, id, href, aClass, text }) => {
         smooth
         to={href}
         className={aClass}
-        aria-label={`Navaigation button for ${text}`}
+        aria-label={`Navigation button for ${text}`}
       >
         {text}
       </HashLink>

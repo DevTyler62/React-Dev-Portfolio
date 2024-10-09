@@ -101,9 +101,3 @@ const Header = () => {
 };
 
 export default Header;
-
-{
-  /* <div className="nav__close" id="nav-close">
-  <i className="bx bx-x"></i>
-</div>; */
-}

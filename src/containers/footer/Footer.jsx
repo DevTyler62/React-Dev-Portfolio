@@ -12,28 +12,28 @@ const Footer = () => {
           <Link
             id={1}
             liClass={"footer__item"}
-            href={"#home"}
+            href={"/#home"}
             aClass={"footer__link"}
             text={"Home"}
           />
           <Link
             id={2}
             liClass={"footer__item"}
-            href={"#about"}
+            href={"/#about"}
             aClass={"footer__link"}
             text={"About"}
           />
           <Link
             id={3}
             liClass={"footer__item"}
-            href={"#work"}
+            href={"/#work"}
             aClass={"footer__link"}
             text={"Work"}
           />
           <Link
             id={4}
             liClass={"footer__item"}
-            href={"#contact"}
+            href={"/#contact"}
             aClass={"footer__link"}
             text={"Contact"}
           />
