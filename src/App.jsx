@@ -12,9 +12,11 @@ import {
   SkyWindWork,
   SkywindDesc,
   TicTacToeWork,
+  TodoWork,
   TictactoeDesc,
   DatafyWork,
   DatafyDesc,
+  TodoDesc,
 } from "./components/projectpage/imports";
 
 function App() {
@@ -78,6 +80,17 @@ function App() {
                 projectImg={ChurchWork}
                 projectCode={"https://github.com/DevTyler62/new-church-website"}
                 description={ChurchDesc}
+              />
+            }
+          />
+          <Route
+            path="todolist"
+            element={
+              <ProjectPage
+                projectTitle={"Todo List"}
+                projectImg={TodoWork}
+                projectCode={"https://github.com/DevTyler62/React-Todo"}
+                description={TodoDesc}
               />
             }
           />

@@ -1,6 +1,14 @@
 import React from "react";
 import { Project } from "../../components/export-components";
-import { Buggy, Datafy, Church, Skywind, TicTacToe, Extra } from "./imports";
+import {
+  Buggy,
+  Datafy,
+  Church,
+  Skywind,
+  TicTacToe,
+  Todo,
+  Extra,
+} from "./imports";
 import "./work.css";
 
 const Work = () => {
@@ -48,11 +56,18 @@ const Work = () => {
         />
         <Project
           divClass={"six"}
+          href={"/todolist"}
+          img={Todo}
+          imgClass={"img-six"}
+          title={"Todo List"}
+        />
+        {/* <Project
+          divClass={"six"}
           href={"/workinprogress"}
           img={Extra}
           imgClass={"img-six"}
           title={"More on the Way"}
-        />
+        /> */}
       </div>
     </div>
   );

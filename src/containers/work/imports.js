@@ -3,6 +3,7 @@ import Church from "../../../src/assets/church-logo.png";
 import Datafy from "../../../src/assets/datafy-logo.png";
 import Skywind from "../../../src/assets/skywind-logo.png";
 import TicTacToe from "../../../src/assets/tictactoe-logo.png";
+import Todo from "../../../src/assets/todo-logo.png";
 import Extra from "../../../src/assets/manager.svg";
 
-export { Buggy, Church, Datafy, Skywind, TicTacToe, Extra };
+export { Buggy, Church, Datafy, Skywind, TicTacToe, Todo, Extra };
