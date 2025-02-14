@@ -31,6 +31,8 @@
 .work__img-img {
   opacity: 1;
   transition: opacity 0.3s;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  width: 40%;
 }
 
 .work__content:hover .work__img-img {
@@ -42,20 +44,25 @@
   opacity: 1;
 }
 
-.img-two {
-  padding: 1.5rem 0rem 1.5rem 0rem;
+.img-one {
+  width: 30%;
+  padding: 3rem 0rem 3rem 0rem;
 }
 
-.img-four {
-  padding: 1.5rem 0rem 1.5rem 0rem;
-  width: 65%;
+.img-two {
+  /* padding: 1.5rem 0rem 1.5rem 0rem; */
+}
+
+.img-five {
+  /* padding: 1.5rem 0rem 1.5rem 0rem; */
+  /* width: 60%; */
 }
 
 .img-six {
-  width: 65%;
-  padding: 1.5rem 0rem 1.5rem 0;
-  display: block;
-  margin: auto;
+  /* width: 60%; */
+  /* padding: 1.5rem 0rem 1.5rem 0; */
+  /* display: block;
+  margin: auto; */
 }
 @media screen and (min-width: 576px) {
   .work__content {

@@ -4,6 +4,7 @@ import DatafyWork from "../../assets/datafy-work.png";
 import SkyWindWork from "../../assets/skywind-work.png";
 import TicTacToeWork from "../../assets/tictactoe.png";
 import TodoWork from "../../assets/todo.png";
+import ProductivityWork from "../../assets/productivity-work.png";
 import CSS from "../../assets/css-3.png";
 import Heroku from "../../assets/heroku.png";
 import Hostinger from "../../assets/hostinger.png";
@@ -15,6 +16,9 @@ import ReactJS from "../../assets/react.png";
 import Sass from "../../assets/sass.png";
 import TailWind from "../../assets/Tailwind.png";
 import Vercel from "../../assets/Vercel.png";
+import Nextjs from "../../assets/nextjs.png";
+import TypeScript from "../../assets/typeScript.png";
+import Motion from "../../assets/motion.png";
 
 const BuggyDesc = `A senior capstone group project that followed all
 elements of the software development life cycle. The project consisted 
@@ -105,6 +109,25 @@ when no tasks are in local storage then an empty state is present ready to be fi
 any tasks the user inputs. The app was built using React with Vite, Tailwind CSS for the 
 styles, SweetAlert2 for the pop-up, and hosted on Vercel.`;
 
+const ProductivityDesc = `A landing page for a Software as a service company. This page 
+showcases what problem this software will solve for your company. At the top is page 
+navigation that will take you to the different sections on the page alongside a banner to
+entice you to try the software. The navigation is sticky and will always stay at the top
+of the page as you scroll. Following the navigation bar is the hero section which has an
+image with the software name, a small description of the software solutions, and a call
+to action button. Just below the hero section is a showcase of different company logos
+that are all using the software. It is presented in a nice flowing side-to-side animation.
+Below the logos is the product presentation section. Displayed is an image of the actual 
+workings of the product itself. Following is the pricing section to lay out the cost of 
+using the software and the benefits that come from the different tiers that are available. 
+A small animation on the center price card to guide user attention to the most popular tier 
+that is selected most often. The testimonials section follows where a scroll animation is 
+present on columns displaying users' reviews of how the software has helped them or 
+their business. Wrapping up is the summary call to action section to get you trying 
+out the software. Followed lastly by the footer to get you to a different section of the 
+page if need be and to signify you have reached the bottom of the page. This landing page 
+was built using Next.js, TypeScript, Tailwind CSS for styling, Framer Motion for the animations, and hosted on Vercel.`;
+
 export {
   BuggyWork,
   ChurchWork,
@@ -127,6 +150,11 @@ export {
   SkywindDesc,
   TictactoeDesc,
   TodoDesc,
+  ProductivityDesc,
+  ProductivityWork,
   TailWind,
   Vercel,
+  Nextjs,
+  TypeScript,
+  Motion,
 };

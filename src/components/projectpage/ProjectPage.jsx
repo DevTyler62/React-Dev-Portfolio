@@ -14,6 +14,9 @@ import {
   Sass,
   TailWind,
   Vercel,
+  TypeScript,
+  Nextjs,
+  Motion,
 } from "./imports";
 
 function CheckProject({ projectTitle }) {
@@ -70,6 +73,15 @@ function CheckProject({ projectTitle }) {
         <Technology technology={Vercel} />
       </>
     );
+  } else if (projectTitle === "Productivity SaaS") {
+    return (
+      <>
+        <Technology technology={Nextjs} />
+        <Technology technology={TypeScript} />
+        <Technology technology={TailWind} />
+        <Technology technology={Vercel} />
+      </>
+    );
   }
 }
 
@@ -98,6 +110,17 @@ function CheckLiveSite({ projectTitle }) {
       <>
         <a
           href="https://todo-crud-app-tc.vercel.app/"
+          className="button button__live"
+        >
+          Live Site
+        </a>
+      </>
+    );
+  } else if (projectTitle === "Productivity SaaS") {
+    return (
+      <>
+        <a
+          href="https://productivity-saas.vercel.app/"
           className="button button__live"
         >
           Live Site

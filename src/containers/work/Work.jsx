@@ -8,6 +8,7 @@ import {
   TicTacToe,
   Todo,
   Extra,
+  Productivity,
 } from "./imports";
 import "./work.css";
 
@@ -21,10 +22,10 @@ const Work = () => {
       <div className="work__container grid">
         <Project
           divClass={"one"}
-          href={"/buggybugtracker"}
-          img={Buggy}
+          href={"/productivity"}
+          img={Productivity}
           imgClass={"img-one"}
-          title={"Buggy Bug Tracker"}
+          title={"Productivity SaaS"}
         />
         <Project
           divClass={"two"}
@@ -35,24 +36,24 @@ const Work = () => {
         />
         <Project
           divClass={"three"}
-          href={"/skywind"}
-          img={Skywind}
+          href={"/buggybugtracker"}
+          img={Buggy}
           imgClass={"img-three"}
-          title={"Skywind"}
+          title={"Buggy Bug Tracker"}
         />
         <Project
           divClass={"four"}
-          href={"/tictactoe"}
-          img={TicTacToe}
+          href={"/skywind"}
+          img={Skywind}
           imgClass={"img-four"}
-          title={"Tic Tac Toe"}
+          title={"Skywind"}
         />
         <Project
           divClass={"five"}
-          href={"/churchsite"}
-          img={Church}
+          href={"/tictactoe"}
+          img={TicTacToe}
           imgClass={"img-five"}
-          title={"Church Website"}
+          title={"Tic Tac Toe"}
         />
         <Project
           divClass={"six"}
@@ -61,6 +62,13 @@ const Work = () => {
           imgClass={"img-six"}
           title={"Todo List"}
         />
+        {/* <Project
+          divClass={"five"}
+          href={"/churchsite"}
+          img={Church}
+          imgClass={"img-five"}
+          title={"Church Website"}
+        /> */}
         {/* <Project
           divClass={"six"}
           href={"/workinprogress"}
