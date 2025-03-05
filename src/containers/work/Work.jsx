@@ -9,6 +9,7 @@ import {
   Todo,
   Extra,
   Productivity,
+  SparkShift,
 } from "./imports";
 import "./work.css";
 
@@ -22,46 +23,53 @@ const Work = () => {
       <div className="work__container grid">
         <Project
           divClass={"one"}
-          href={"/productivity"}
-          img={Productivity}
+          href={"/sparkshift"}
+          img={SparkShift}
           imgClass={"img-one"}
-          title={"Productivity SaaS"}
+          title={"SparkShift"}
         />
         <Project
           divClass={"two"}
-          href={"/datafy"}
-          img={Datafy}
+          href={"/productivity"}
+          img={Productivity}
           imgClass={"img-two"}
-          title={"Datafy"}
+          title={"Productivity SaaS"}
         />
         <Project
           divClass={"three"}
-          href={"/buggybugtracker"}
-          img={Buggy}
+          href={"/datafy"}
+          img={Datafy}
           imgClass={"img-three"}
-          title={"Buggy Bug Tracker"}
+          title={"Datafy"}
         />
         <Project
           divClass={"four"}
-          href={"/skywind"}
-          img={Skywind}
+          href={"/buggybugtracker"}
+          img={Buggy}
           imgClass={"img-four"}
-          title={"Skywind"}
+          title={"Buggy Bug Tracker"}
         />
         <Project
           divClass={"five"}
-          href={"/tictactoe"}
-          img={TicTacToe}
+          href={"/skywind"}
+          img={Skywind}
           imgClass={"img-five"}
-          title={"Tic Tac Toe"}
+          title={"Skywind"}
         />
         <Project
+          divClass={"six"}
+          href={"/tictactoe"}
+          img={TicTacToe}
+          imgClass={"img-six"}
+          title={"Tic Tac Toe"}
+        />
+        {/* <Project
           divClass={"six"}
           href={"/todolist"}
           img={Todo}
           imgClass={"img-six"}
           title={"Todo List"}
-        />
+        /> */}
         {/* <Project
           divClass={"five"}
           href={"/churchsite"}

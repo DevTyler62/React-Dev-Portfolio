@@ -15,6 +15,8 @@ import {
   TodoWork,
   ProductivityDesc,
   ProductivityWork,
+  SparkshiftWork,
+  SparkshiftDesc,
   TictactoeDesc,
   DatafyWork,
   DatafyDesc,
@@ -85,7 +87,7 @@ function App() {
               />
             }
           /> */}
-          <Route
+          {/* <Route
             path="todolist"
             element={
               <ProjectPage
@@ -95,7 +97,7 @@ function App() {
                 description={TodoDesc}
               />
             }
-          />
+          /> */}
           <Route
             path="productivity"
             element={
@@ -104,6 +106,17 @@ function App() {
                 projectImg={ProductivityWork}
                 projectCode={"https://github.com/DevTyler62/Productivity_SaaS"}
                 description={ProductivityDesc}
+              />
+            }
+          />
+          <Route
+            path="sparkshift"
+            element={
+              <ProjectPage
+                projectTitle={"Sparkshift"}
+                projectImg={SparkshiftWork}
+                projectCode={"https://github.com/DevTyler62/SparkShift"}
+                description={SparkshiftDesc}
               />
             }
           />

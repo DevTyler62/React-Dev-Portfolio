@@ -5,6 +5,7 @@ import SkyWindWork from "../../assets/skywind-work.png";
 import TicTacToeWork from "../../assets/tictactoe.png";
 import TodoWork from "../../assets/todo.png";
 import ProductivityWork from "../../assets/productivity-work.png";
+import SparkshiftWork from "../../assets/sparkshift-work.png";
 import CSS from "../../assets/css-3.png";
 import Heroku from "../../assets/heroku.png";
 import Hostinger from "../../assets/hostinger.png";
@@ -128,6 +129,19 @@ out the software. Followed lastly by the footer to get you to a different sectio
 page if need be and to signify you have reached the bottom of the page. This landing page 
 was built using Next.js, TypeScript, Tailwind CSS for styling, Framer Motion for the animations, and hosted on Vercel.`;
 
+const SparkshiftDesc = `Sparkshift is a concept marketing agency's landing page. This page
+was built from a Figma design file that I had found on Envato. The Figma design file only had 
+the desktop view provided, so I had to be sure it would be able to be responsive on other device
+screens. The desktop view was set up in a pleasant format that made transitioning to the smaller
+screens easier. Building this page allowed me to understand more about Typescript and its type
+definitions. Without type definitions, the page may still function as intended, but errors would
+show within the code and during deployment. Through the creation of the accordion piece, I was 
+learning how to keep refactoring my previous code down to be more efficient. This section also 
+used the different abilities within Framer Motion to animate the individual items once they were 
+clicked on to either open or close. View the code on my Github using the Code button, or view the 
+project using the Live Site button. This project was built off of a Figma design file using the 
+technologies of Next.js, TypeScript, Tailwind CSS, Framer Motion, and hosted on Vercel. `;
+
 export {
   BuggyWork,
   ChurchWork,
@@ -152,6 +166,8 @@ export {
   TodoDesc,
   ProductivityDesc,
   ProductivityWork,
+  SparkshiftWork,
+  SparkshiftDesc,
   TailWind,
   Vercel,
   Nextjs,

@@ -82,6 +82,15 @@ function CheckProject({ projectTitle }) {
         <Technology technology={Vercel} />
       </>
     );
+  } else if (projectTitle === "Sparkshift") {
+    return (
+      <>
+        <Technology technology={Nextjs} />
+        <Technology technology={TypeScript} />
+        <Technology technology={TailWind} />
+        <Technology technology={Vercel} />
+      </>
+    );
   }
 }
 
@@ -121,6 +130,17 @@ function CheckLiveSite({ projectTitle }) {
       <>
         <a
           href="https://productivity-saas.vercel.app/"
+          className="button button__live"
+        >
+          Live Site
+        </a>
+      </>
+    );
+  } else if (projectTitle === "Sparkshift") {
+    return (
+      <>
+        <a
+          href="https://spark-shift.vercel.app/"
           className="button button__live"
         >
           Live Site

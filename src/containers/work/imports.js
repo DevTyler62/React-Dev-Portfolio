@@ -6,5 +6,16 @@ import TicTacToe from "../../../src/assets/tictactoe-logo.png";
 import Todo from "../../../src/assets/todo-logo.png";
 import Extra from "../../../src/assets/manager.svg";
 import Productivity from "../../../src/assets/logosaas.png";
+import SparkShift from "../../../src/assets/sparkshift-logo.png";
 
-export { Buggy, Church, Datafy, Skywind, TicTacToe, Todo, Extra, Productivity };
+export {
+  Buggy,
+  Church,
+  Datafy,
+  Skywind,
+  TicTacToe,
+  Todo,
+  Extra,
+  Productivity,
+  SparkShift,
+};
