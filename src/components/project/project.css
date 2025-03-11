@@ -53,10 +53,13 @@
 
 @media screen and (max-width: 575px) {
   .img-one {
-    width: 30%;
-    padding: 3rem 0 3rem 0;
+    padding: 4.5rem 0 4.5rem 0;
   }
   .img-two {
-    padding: 3rem 0 3rem 0;
+    width: 30%;
+    padding: 2.5rem 0 2.5rem 0;
+  }
+  .img-three {
+    padding: 2.5rem 0 2.5rem 0;
   }
 }
