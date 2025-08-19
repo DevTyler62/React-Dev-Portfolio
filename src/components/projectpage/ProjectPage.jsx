@@ -14,12 +14,49 @@ import {
   Sass,
   TailWind,
   Vercel,
+  WVercel,
   TypeScript,
   Nextjs,
+  WNextjs,
   Motion,
 } from "./imports";
+import { useState, useEffect } from "react";
 
 function CheckProject({ projectTitle }) {
+  const [theme, setTheme] = useState(
+    document.documentElement.getAttribute("data-theme")
+  );
+
+  useEffect(() => {
+    const htmlEl = document.documentElement;
+
+    // Callback for MutationObserver
+    const observerCallback = (mutationsList) => {
+      for (const mutation of mutationsList) {
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "data-theme"
+        ) {
+          setTheme(htmlEl.getAttribute("data-theme"));
+        }
+      }
+    };
+
+    // Create observer
+    const observer = new MutationObserver(observerCallback);
+
+    // Start observing attribute changes on <html>
+    observer.observe(htmlEl, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+
+    // Cleanup on unmount
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   if (projectTitle === "Buggy Bug Tracker") {
     return (
       <>
@@ -74,23 +111,47 @@ function CheckProject({ projectTitle }) {
       </>
     );
   } else if (projectTitle === "Productivity SaaS") {
-    return (
-      <>
-        <Technology technology={Nextjs} />
-        <Technology technology={TypeScript} />
-        <Technology technology={TailWind} />
-        <Technology technology={Vercel} />
-      </>
-    );
+    if (theme === "dark") {
+      // If dark theme is active, use white icon variants
+      return (
+        <>
+          <Technology technology={WNextjs} />
+          <Technology technology={TypeScript} />
+          <Technology technology={TailWind} />
+          <Technology technology={WVercel} />
+        </>
+      );
+    } else {
+      return (
+        <>
+          <Technology technology={Nextjs} />
+          <Technology technology={TypeScript} />
+          <Technology technology={TailWind} />
+          <Technology technology={Vercel} />
+        </>
+      );
+    }
   } else if (projectTitle === "Sparkshift") {
-    return (
-      <>
-        <Technology technology={Nextjs} />
-        <Technology technology={TypeScript} />
-        <Technology technology={TailWind} />
-        <Technology technology={Vercel} />
-      </>
-    );
+    if (theme === "dark") {
+      // If dark theme is active, use white icon variants
+      return (
+        <>
+          <Technology technology={WNextjs} />
+          <Technology technology={TypeScript} />
+          <Technology technology={TailWind} />
+          <Technology technology={WVercel} />
+        </>
+      );
+    } else {
+      return (
+        <>
+          <Technology technology={Nextjs} />
+          <Technology technology={TypeScript} />
+          <Technology technology={TailWind} />
+          <Technology technology={Vercel} />
+        </>
+      );
+    }
   }
 }
 
@@ -98,7 +159,11 @@ function CheckLiveSite({ projectTitle }) {
   if (projectTitle === "Skywind") {
     return (
       <>
-        <a href="https://skywind.netlify.app/" className="button button__live">
+        <a
+          href="https://skywind.netlify.app/"
+          target="_blank"
+          className="button button__live"
+        >
           Live Site
         </a>
       </>
@@ -108,6 +173,7 @@ function CheckLiveSite({ projectTitle }) {
       <>
         <a
           href="https://tictactoe-code.netlify.app/"
+          target="_blank"
           className="button button__live"
         >
           Live Site
@@ -119,6 +185,7 @@ function CheckLiveSite({ projectTitle }) {
       <>
         <a
           href="https://todo-crud-app-tc.vercel.app/"
+          target="_blank"
           className="button button__live"
         >
           Live Site
@@ -130,6 +197,7 @@ function CheckLiveSite({ projectTitle }) {
       <>
         <a
           href="https://productivity-saas.vercel.app/"
+          target="_blank"
           className="button button__live"
         >
           Live Site
@@ -141,6 +209,7 @@ function CheckLiveSite({ projectTitle }) {
       <>
         <a
           href="https://spark-shift.vercel.app/"
+          target="_blank"
           className="button button__live"
         >
           Live Site
@@ -182,7 +251,7 @@ const ProjectPage = ({
         </ul>
       </div>
       <div className="container buttons">
-        <a href={projectCode} className="button button__code">
+        <a href={projectCode} target="_blank" className="button button__code">
           Code
         </a>
         <CheckLiveSite projectTitle={projectTitle} />

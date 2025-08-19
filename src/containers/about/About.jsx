@@ -12,10 +12,12 @@ const About = () => {
         </div>
         <div className="about__content">
           <p className="about__description">
-            Developer who's passion for technology goes beyond the product.
-            Trying to discover the ways in which software blends into our daily
-            lives. Even though my formal education may be over the learning
-            journey is never over.
+            I am located with the Greater Philadelphia, PA area. My tech stack
+            is with the JavaScript family of languages and frameworks with more
+            of a emphasis on the Frontend side. Though I am always excited to
+            experiment and try new things. My passion for technology goes beyond
+            the product. As I try to discover the ways in which software blends
+            into our daily lives.
           </p>
         </div>
       </div>

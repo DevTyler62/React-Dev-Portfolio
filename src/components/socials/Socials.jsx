@@ -5,6 +5,7 @@ const Socials = ({ href, img, imgClass }) => {
     <li className="footer__item-social">
       <a
         href={href}
+        target="_blank"
         className="footer__social-link"
         aria-label="Footer social links"
       >

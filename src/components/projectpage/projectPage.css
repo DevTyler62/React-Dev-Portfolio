@@ -28,6 +28,11 @@ h1 {
   width: 60%;
 }
 
+.vercel {
+  min-width: 0;
+  width: 40%;
+}
+
 .buttons {
   margin-top: 2rem;
   margin-bottom: 2rem;

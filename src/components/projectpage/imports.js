@@ -17,7 +17,9 @@ import ReactJS from "../../assets/react.png";
 import Sass from "../../assets/sass.png";
 import TailWind from "../../assets/Tailwind.png";
 import Vercel from "../../assets/Vercel.png";
+import WVercel from "../../assets/vercel-w.png";
 import Nextjs from "../../assets/nextjs.png";
+import WNextjs from "../../assets/next.js-w.png";
 import TypeScript from "../../assets/typeScript.png";
 import Motion from "../../assets/motion.png";
 
@@ -170,7 +172,9 @@ export {
   SparkshiftDesc,
   TailWind,
   Vercel,
+  WVercel,
   Nextjs,
+  WNextjs,
   TypeScript,
   Motion,
 };
