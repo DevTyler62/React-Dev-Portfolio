@@ -26,8 +26,9 @@ const Home = () => {
               Github
             </a>
             <a
-              href="../../../public/resume/Tyler-Smith-Resume.pdf"
-              download
+              href="https://tyler-smith-resume.tiiny.site"
+              // href="../../../public/resume/Tyler-Smith-Resume.pdf"
+              target="_blank"
               className="button sec_button"
             >
               Resume
