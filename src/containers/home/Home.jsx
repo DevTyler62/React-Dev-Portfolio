@@ -17,6 +17,22 @@ const Home = () => {
           <a href="#work" className="button home__button">
             View my work<i className="bx bx-right-arrow-alt button__icon"></i>
           </a>
+          <div className="home__sec_buttons">
+            <a
+              href="https://github.com/DevTyler62"
+              className="button sec_button"
+              target="_blank"
+            >
+              Github
+            </a>
+            <a
+              href="../../../public/resume/Tyler-Smith-Resume.pdf"
+              download
+              className="button sec_button"
+            >
+              Resume
+            </a>
+          </div>
         </div>
         <div className="home__img">
           <img src={HomeImg} alt="" className="home__img-img" />

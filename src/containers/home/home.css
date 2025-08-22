@@ -46,6 +46,29 @@
   margin-bottom: 0.25rem;
 }
 
+.home__sec_buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  max-width: 247px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__sec_buttons a {
+  font-size: 0.8rem;
+}
+
+.sec_button {
+  max-width: 115px;
+  width: 100%;
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #ff9900;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 /*====== Breakpoints =====*/
 /* Small devices */
 @media screen and (max-width: 320px) {
@@ -69,6 +92,23 @@
 
   .home__img {
     width: 275px;
+  }
+}
+
+/* Small devices */
+@media screen and (max-width: 320px) {
+  .home__sec_buttons a {
+    font-size: 0.8rem;
+  }
+  .sec_button {
+    padding: 0.25rem 0.5rem;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .home__sec_buttons {
+    justify-content: start;
   }
 }
 
@@ -98,6 +138,12 @@
 
   .button__icon {
     margin-top: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home__sec_buttons {
+    max-width: 100%;
   }
 }
 
