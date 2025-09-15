@@ -27,7 +27,6 @@ const Home = () => {
             </a>
             <a
               href="https://tyler-smith-resume.tiiny.site"
-              // href="../../../public/resume/Tyler-Smith-Resume.pdf"
               target="_blank"
               className="button sec_button"
             >

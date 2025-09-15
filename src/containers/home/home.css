@@ -56,6 +56,7 @@
 }
 
 .home__sec_buttons a {
+  color: var(--paletter-text);
   font-size: 0.8rem;
 }
 
