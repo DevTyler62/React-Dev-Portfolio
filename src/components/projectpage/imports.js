@@ -2,7 +2,7 @@ import BuggyWork from "../../assets/buggy-work.png";
 import ChurchWork from "../../assets/church-work.png";
 import DatafyWork from "../../assets/datafy-work.png";
 import SkyWindWork from "../../assets/skywind-work.png";
-import TicTacToeWork from "../../assets/tictactoe.png";
+import TicTacToeWork from "../../assets/new-tictactoe.png";
 import TodoWork from "../../assets/todo.png";
 import ProductivityWork from "../../assets/productivity-work.png";
 import SparkshiftWork from "../../assets/sparkshift-work.png";
