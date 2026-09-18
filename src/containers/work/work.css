@@ -1,6 +1,6 @@
 /*===== My work =====*/
 .work__container {
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 0;
 }
 
@@ -11,14 +11,9 @@
 
 @media screen and (min-width: 576px) {
   .work__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 0;
     margin: 1.5rem;
-  }
-
-  .work__content {
-    justify-self: center;
-    width: 100%;
   }
 }
 

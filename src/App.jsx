@@ -52,7 +52,7 @@ function App() {
               />
             }
           />
-          <Route
+          {/* <Route
             path="skywind"
             element={
               <ProjectPage
@@ -64,7 +64,7 @@ function App() {
                 description={SkywindDesc}
               />
             }
-          />
+          /> */}
           <Route
             path="tictactoe"
             element={
@@ -76,17 +76,17 @@ function App() {
               />
             }
           />
-          {/* <Route
+          <Route
             path="churchsite"
             element={
               <ProjectPage
                 projectTitle={"Church Website"}
                 projectImg={ChurchWork}
-                projectCode={"https://github.com/DevTyler62/new-church-website"}
+                projectCode={"https://github.com/DevTyler62/PMC-Church"}
                 description={ChurchDesc}
               />
             }
-          /> */}
+          />
           {/* <Route
             path="todolist"
             element={
