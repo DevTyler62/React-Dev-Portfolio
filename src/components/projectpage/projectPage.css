@@ -19,18 +19,16 @@ h1 {
 }
 
 .technology__list {
-  width: 80%;
+  --technology-logo-size: clamp(3rem, 7vw, 4rem);
+  --technology-slot-size: clamp(4rem, 10vw, 5.5rem);
   display: flex;
-}
-
-.technology__item-img {
-  min-width: 0;
-  width: 60%;
-}
-
-.vercel {
-  min-width: 0;
-  width: 40%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2rem);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .buttons {
@@ -46,22 +44,4 @@ h1 {
   margin-bottom: 10rem;
   line-height: 160%;
   font-weight: 500;
-}
-
-.hostinger {
-  width: 100%;
-}
-
-@media screen and (min-width: 767px) {
-  .technology__list {
-    width: 70%;
-  }
-
-  .technology__item-img {
-    width: 40%;
-  }
-
-  .hostinger {
-    width: 100%;
-  }
 }

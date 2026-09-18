@@ -1,1 +1,19 @@
+.technology__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--technology-slot-size);
+  height: var(--technology-slot-size);
+}
 
+.technology__item-img {
+  display: block;
+  width: var(--technology-logo-size);
+  height: var(--technology-logo-size);
+  object-fit: contain;
+}
+
+/* The supplied Blossom SVG has whitespace around its central artwork. */
+.technology__item-img--openai {
+  transform: scale(2);
+}

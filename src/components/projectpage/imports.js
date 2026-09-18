@@ -1,5 +1,5 @@
 import BuggyWork from "../../assets/buggy-work.png";
-import ChurchWork from "../../assets/church-work.png";
+import ChurchWork from "../../assets/church-work.webp";
 import DatafyWork from "../../assets/datafy-work.png";
 import SkyWindWork from "../../assets/skywind-work.png";
 import TicTacToeWork from "../../assets/new-tictactoe.png";
@@ -22,6 +22,9 @@ import Nextjs from "../../assets/nextjs.png";
 import WNextjs from "../../assets/next.js-w.png";
 import TypeScript from "../../assets/typeScript.png";
 import Motion from "../../assets/motion.png";
+import GSAP from "../../assets/gsap.svg";
+import Black_OpenAI from "../../assets/OpenAI-Blossom_Black.svg";
+import White_OpenAI from "../../assets/OpenAI-Blossom_White.svg";
 
 const BuggyDesc = `A senior capstone group project that followed all
 elements of the software development life cycle. The project consisted 
@@ -43,13 +46,22 @@ Buggy is no longer an active site. The code is still available to view on GitHub
 built using modern technologies such as HTML, CSS, JavaScript, PHP,
 MySQL, and Hostinger.`;
 
-const ChurchDesc = `A local church organization, which I do attend, did not have a website
-for itself. I saw this as an opportunity to create one.
-I also used this project as a way to experiment with some new ideas.
-Instead of using CSS I used SCSS and used icons found on undraw. With the icons, 
-I animated parts of the SVG elements to add some liveliness to the site. 
-Alongside the animated icons are some site-wide animations as well. This church website was built using HTML,
-SCSS, JavaScript, and PHP.`;
+const ChurchDesc = `This project is for a local church organization in my area that did not have a website.
+I used this opportunity to experiment and utilize OpenAI’s Codex coding agent. I did some research before
+diving right in, as I wanted to see if it would make a website that had its own character to it. I used
+the research to prompt it with a story about what I wanted the site to look like and the journey a user
+is going to take as they scroll through. I used a skill called a taste skill, which would use actual design
+references used in the real world to come up with a nice design for the site. Following the first draft of
+the site, I prompted it to get better images that fit the copy and the mood the site would bring in. The
+colors were adjusted after I added a DESIGN.md file to fit the proper scheme of the church's sign that is
+out by the road next to the church building. I connected the site to Email.js to allow for email to be sent
+via a form to the church's email. It connects to the YouTube channel and pulls in the latest sermon that is
+uploaded every Sunday. For some extra creativity and content, I had it create a daily devotional section
+that pulls in a new bible verse every day for viewers to see. The site already generated animations using
+GSAP, but I thought it could use some more and to smooth out ones that were already existing. I verified
+its responsive design and had it fix some issues that came up in certain sections. Some of the copy still
+has to be added for placeholders, and I plan to refine it as it needs be. The project was built using Codex
+with Next.js, Tailwind CSS, GSAP for animations, and is being hosted on Vercel.`;
 
 const DatafyDesc = `Datafy is a Spotify Data Visualization web app. This project was
 completed in one semester and was done in a group of 3. The
@@ -177,4 +189,7 @@ export {
   WNextjs,
   TypeScript,
   Motion,
+  GSAP,
+  Black_OpenAI,
+  White_OpenAI,
 };

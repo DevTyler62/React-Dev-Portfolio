@@ -19,6 +19,9 @@ import {
   Nextjs,
   WNextjs,
   Motion,
+  White_OpenAI,
+  GSAP,
+  Black_OpenAI,
 } from "./imports";
 import { useState, useEffect } from "react";
 
@@ -94,14 +97,26 @@ function CheckProject({ projectTitle }) {
       </>
     );
   } else if (projectTitle === "Church Website") {
-    return (
-      <>
-        <Technology technology={HTML} />
-        <Technology technology={Sass} />
-        <Technology technology={JavaScript} />
-        <Technology technology={PHP} />
-      </>
-    );
+    if (theme === "dark") {
+      // If dark theme is active, use white icon variants
+      return (
+        <>
+          <Technology technology={White_OpenAI} />
+          <Technology technology={WNextjs} />
+          <Technology technology={TailWind} />
+          <Technology technology={GSAP} />
+        </>
+      );
+    } else {
+      return (
+        <>
+          <Technology technology={Black_OpenAI} />
+          <Technology technology={Nextjs} />
+          <Technology technology={TailWind} />
+          <Technology technology={GSAP} />
+        </>
+      );
+    }
   } else if (projectTitle === "Todo List") {
     return (
       <>
@@ -156,11 +171,23 @@ function CheckProject({ projectTitle }) {
 }
 
 function CheckLiveSite({ projectTitle }) {
-  if (projectTitle === "Skywind") {
+  // if (projectTitle === "Skywind") {
+  //   return (
+  //     <>
+  //       <a
+  //         href="https://skywind.netlify.app/"
+  //         target="_blank"
+  //         className="button button__live"
+  //       >
+  //         Live Site
+  //       </a>
+  //     </>
+  //   );
+  if (projectTitle === "Church Website") {
     return (
       <>
         <a
-          href="https://skywind.netlify.app/"
+          href="https://pmcchurch.vercel.app/"
           target="_blank"
           className="button button__live"
         >
