@@ -97,15 +97,17 @@ or inspect the page and go to the responsive section for a mobile
 device to view it properly. SkyWind was built using HTML, CSS, JavaScript, and hosted on Netilfy.`;
 
 const TictactoeDesc = `I have created a Tic Tac Toe game that includes the ability to play 
-with two people or play against a computer. The computer's code is written in a way to 
-look at the user's spot selection to block them from winning, while also including
-random spot selection. I figured that if
-the computer did not have some random spot picking then a game would
-most likely end in a tie in most cases. Upon either a tie or a winning
-game, the pop-ups that appear come from an add-on known as
-Sweetalert2. Using this allowed me to have some nice pop-up boxes that
-matched the UI I was going for. This project was built using HTML, CSS,
-and JavaScript.`;
+with two people or play against a computer. After the first version, where I built the computer 
+code to be rather simple and hard-coded, I decided to change it up to be more computerized. With 
+assistance from ChatGPT, I utilized a min-max algorithm that has the computer look for all possible 
+future moves, giving them a score based on a win, lose, or tie scenario. The computer then selects 
+the best move at that time while also assuming its human opponent also makes the best move. This 
+opened up the door for me to allow for a difficulty selection, as the min-max would be the hard 
+difficulty. The other difficulties used similar components of the min-max algorithm but without 
+using a score and being more randomized, allowing for wins to occur more often. A pop-up from 
+Sweetalert2 is shown upon either a tie or a winning game. This project was built using HTML, CSS, 
+and JavaScript with assistance from ChatGPT and is hosted on Vercel.
+`;
 
 const TodoDesc = `This is a React to-do list app with the features of a CRUD app. 
 The app allows you to add new tasks to your task list. Once a task has been completed 
